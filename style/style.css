@@ -126,6 +126,18 @@ img{
     margin-bottom: 80px;
 }
 
+.mb-100 {
+    margin-bottom: 100px;
+}
+
+.mb-150 {
+    margin-bottom: 150px;
+}
+
+.mb-200 {
+    margin-bottom: 200px;
+}
+
 
 /*=======  Hero Section =======*/
 .hero-section{
@@ -169,6 +181,26 @@ img{
     font-size: 16px;
 }
 
+/*========= Product Section =======*/
+.product-kits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product-kits .product-text{
+    color: #F1280F;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+}
+.product-detail{
+    display: flex;
+    justify-content: space-between;
+}
+
 /*========= Highlight Section ======*/
 .highlight{
     margin-top: -165px;
@@ -180,6 +212,7 @@ img{
 .highlight-detail{
     font-size: 16px;
     color: #6C6C6C;
+    margin-right: 131px;
 }
 
 /*=========Footer Section ========*/
@@ -223,7 +256,7 @@ footer{
 
     /*======Hero Section======*/
     .hero-section .left-side{
-        text-align: center;
+        margin: 50px 66px 0px 16px;
     }
 
     .hero-section h1{
@@ -240,9 +273,26 @@ footer{
         margin: 5px;
     }
 
+    /*======Product Section======*/
+    .product-kits{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .products{
+        grid-template-columns: repeat(1,1fr);
+    }
+
     /*======Highlight Section======*/
     .highlight{
-        margin-top: 60px;
+        margin-top: -60px;
+    }
+
+    .highlight .left-side{
+        margin: 0 16px;
+    }
+
+    .highlight h1{
+        font-size: 30px;
     }
 
     /*======Footer Section======*/
@@ -271,6 +321,15 @@ footer{
         margin-top: 50px;
     }
 
+    /*======Product Section======*/
+    .product-kits{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .products{
+        grid-template-columns: repeat(2,1fr);
+    }
+
     /*======Player Section======*/
     .players{
         grid-template-columns: repeat(2,1fr);
@@ -281,13 +340,15 @@ footer{
     .highlight{
         margin-top: -60px;
     }
-
     .highlight .left-side{
-        text-align: center;
+        margin-right: 10px;
+    }
+    .highlight .right-side{
+        margin-top: 200px;
     }
 
-    .highlight .right-side{
-        margin-left: 20px;
+    .highlight-detail{
+        margin-right: 50px;
     }
 
     /*======Footer Section======*/
